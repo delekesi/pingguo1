@@ -1,0 +1,72 @@
+ <!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+
+<script src="ag.js"></script>
+</head>
+<body ng-app="myapp">
+
+<!-- <div ng-app="myapp">
+ 
+  <h1 ng-controller="myctrl">Hello {{user}}
+
+
+   <button ng-click="move()">按钮</button>
+ </h1>
+ 
+    <h1 ng-controller="myctrl1">Hello {{user}}
+
+
+     <button ng-click="haha()">按钮</button></h1>
+
+    
+    
+</div>
+ -->
+
+
+ <div  ng-controller="into" style="border:10px solid red">{{user}}
+ 	<div  ng-controller="intos" style="border:10px solid blue">{{user}}</div>
+ </div>
+
+ 
+
+
+
+<script>
+
+// var myad=angular.module("myapp",[]);
+// myad.run(function($rootScope){
+// 	$rootScope.user="李鹏";
+// })
+
+// myad.controller("myctrl",function($scope){
+// 	$scope.move=function(){
+// 		$scope.user="反击费";
+// 	}
+	
+	
+// }).controller("myctrl1",function($scope){
+// 	$scope.haha=function(){
+// 		$scope.user="卢玉强";
+// 	}
+	
+// })	
+
+ var myapp=angular.module("myapp",[]);
+ myapp.controller("into",function($scope){
+ 	$scope.user="zhangsan"
+ }).controller("intos",function($scope){
+ 	
+ })
+
+
+
+
+	
+
+</script>
+
+</body>
+</html> 

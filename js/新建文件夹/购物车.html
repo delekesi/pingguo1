@@ -1,0 +1,48 @@
+<!doctype html>
+<html ng-app="app">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="index.css">
+	<script src="ag.js"></script>
+	<script src="index.js"></script>
+</head>
+<body ng-controller="cc" >
+
+<div class="left" >
+	<div class="box" ng-repeat="v in shop">
+		<div class="img-1" style="background-image:url({{v.url}})"></div>
+		<div class="mingcheng">{{v.name}}</div>
+		<div class="jiage">{{v.price|currency:"￥"}}</div>
+		<div class="goumai" ng-click="move(v.id)">购买</div>
+	</div>
+
+</div>
+<div class="right">
+	<table>
+	<tr>
+		<td>id</td>
+		<td>名称</td>
+		<td>单价</td>
+		<td>数量</td>
+		<td>总价</td>
+		<td>删除</td>
+		</tr>
+		<tr ng-repeat="v in shops">
+			<td>{{$index+1}}</td>
+			<td>{{v.name}}</td>
+			<td>{{v.price|currency:"￥"}}</td>
+			<td><button ng-click="jia(v.id)">+</button> <input type="text" value="{{v.num}}"> <button ng-click="jian(v.id)">-</button></td>
+			<td>{{v.num*v.price|currency:"￥"}}</td>
+			<td><button ng-click="dele(v.id)">del</button></td>
+		</tr>
+		<tr>
+			总价:{{total|currency:"￥"}}
+		</tr>
+	</table>
+</div>
+
+
+	
+</body>
+</html>

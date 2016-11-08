@@ -1,0 +1,23 @@
+<!doctype html>
+<html ng-app="app">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="ag.js"></script>
+</head>
+<body >
+	<div ng-controller="cc">
+		<p ng-show="true"  ng-style="flag" ng-click="flag=!flag">wqeqweqweqweqweqw</p>
+		<p ng-style="style1">wqeqweqweqweqweqw</p>
+	</div>
+	<script>
+    var app=angular.module("app",[])
+    app.controller("cc",function($scope){
+    	 $scope.flag=$scope.flag?true:false;
+          $scope.style1={color:'blue',border:'1px solid red'}
+          	$scope.style2={color:'red',border:'1px solid blue'}
+          
+    })
+	</script>
+</body>
+</html>
