@@ -533,9 +533,9 @@ img {
 .banner-btns .btns div {
   width: 50px;
   float: left;
-  height: 2px;
+  height: 5px;
   margin: 10px 5px;
-  background: #000;
+  background: #aaa;
   border-radius: 3px;
   cursor: pointer;
 }
@@ -545,9 +545,9 @@ img {
 .leftss {
   width: 60px;
   height: 60px;
-  background: #666;
+
   color: #fff;
-  font-size: 20px;
+  font-size: 40px;
   position: absolute;
   top: 200px;
   line-height: 60px;
@@ -561,10 +561,10 @@ img {
 .rightss {
   width: 60px;
   height: 60px;
-  background: #666;
+
   color: #fff;
   position: absolute;
-  font-size: 20px;
+  font-size: 40px;
   top: 200px;
   right: 0px;
   line-height: 60px;
